@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "fastapi-ml-demo"
+version = "0.1.0"
+description = "FastAPI Tensorflow integration"
+authors = ["dhzdhd <a@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.1"
+uvicorn = {extras = ["standard"], version = "^0.23.2"}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
