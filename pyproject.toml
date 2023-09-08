@@ -9,6 +9,16 @@ readme = "README.md"
 python = "^3.11"
 fastapi = "^0.103.1"
 uvicorn = {extras = ["standard"], version = "^0.23.2"}
+numpy = "^1.25.2"
+
+[tool.poetry.group.dev.dependencies]
+taskipy = "^1.12.0"
+
+[tool.taskipy.tasks]
+api = "uvicorn fastapi-ml-demo.main:app --reload"
+format = "black --check fastapi-ml-demo"
+lint = "flake8 fastapi-ml-demo"
+sort = "isort fastapi-ml-demo"
 
 [build-system]
 requires = ["poetry-core"]
