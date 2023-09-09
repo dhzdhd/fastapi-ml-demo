@@ -63,6 +63,9 @@ COPY --from=builder-base $PYSETUP_PATH $PYSETUP_PATH
 RUN --mount=type=cache,target=/root/.cache \
     poetry install --with=dev
 
+COPY ./fastapi-ml-demo /app/
+COPY ./poetry.toml /app/
+
 # will become mountpoint of our code
 WORKDIR /app
 
