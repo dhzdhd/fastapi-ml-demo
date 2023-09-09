@@ -9,8 +9,9 @@ readme = "README.md"
 python = "3.11.4"
 fastapi = "^0.103.1"
 uvicorn = {extras = ["standard"], version = "^0.23.2"}
-numpy = "^1.25.2"
-tensorflow = "^2.13.0"
+tensorflow = "2.13.0"
+pandas = "^2.1.0"
+scikit-learn = "1.2.2"
 
 [tool.poetry.group.dev.dependencies]
 taskipy = "^1.12.0"
