@@ -2,3 +2,6 @@ __pycache__/
 *.keras
 *submission.csv
 *.p
+
+.nx/installation
+.nx/cache
