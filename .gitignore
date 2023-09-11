@@ -5,3 +5,5 @@ __pycache__/
 
 .nx/installation
 .nx/cache
+
+node_modules/

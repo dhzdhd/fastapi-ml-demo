@@ -21,5 +21,8 @@
   },
   "installation": {
     "version": "16.8.1"
-  }
+  },
+  "plugins": [
+    "@nxlv/python"
+  ]
 }
